@@ -16,14 +16,20 @@
     .container {
         width: 320px;
         background-color: white;
+        border: none;
+        border-radius: 22px;
+        transition: all 0.4s;
+        padding-bottom: 5vh;
         margin: 120px auto;
     }
     table {
         width: 100%;
-        border-color: #f4f4f4;
+        border: none;
+        /* border-color: #f4f4f4; */
     }
     td {
         width: 25%;
+        
     }
     button {
         width: 100%;
@@ -36,7 +42,30 @@
         height: 120px;
         font-size: 40px;
         vertical-align: bottom;
+        border: none;
+        border-radius: 22px;
         text-align: right;
         padding-right: 16px;
         background-color: #ececec;
     }
+
+    @media only screen and (max-width: 1000px) {
+    
+    .container {
+        width: 70vw;
+        height: auto;
+        padding-bottom: 8vh;
+        margin: 22vh auto;
+        border: none;
+        
+        border-radius: 22px;
+        
+    }
+    #inputLabel {
+        border-radius: 22px;
+        border: none;
+    }
+}
+.container:hover{
+    box-shadow: 0px 0px 4px 5px whitesmoke;
+}
